@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220208 22:58:55.388" rpa="false" schemaversion="2">
+<suite id="s1" name="Demo2 Suite" source="C:\Users\parve\PycharmProjects\robot\selenium_suite\demo2_suite.robot">
+<test id="s1-t1" name="TC1 Valid Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://opensource-demo.orangehrmlive.com/</arg>
+<arg>browser=edge</arg>
+<arg>executable_path=${EXECDIR}/driver/msedgedriver</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220208 22:58:55.951" level="INFO">Opening browser 'edge' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220208 22:58:55.951" endtime="20220208 22:59:07.618"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtUsername</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220208 22:59:07.618" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20220208 22:59:07.618" endtime="20220208 22:59:07.805"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=txtPassword</arg>
+<arg>admin123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220208 22:59:07.805" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20220208 22:59:07.883" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220208 22:59:07.987" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220208 22:59:07.805" endtime="20220208 22:59:07.987"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=Submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220208 22:59:07.987" level="INFO">Clicking element 'name=Submit'.</msg>
+<status status="PASS" starttime="20220208 22:59:07.987" endtime="20220208 22:59:13.960"/>
+</kw>
+<status status="PASS" starttime="20220208 22:58:55.951" endtime="20220208 22:59:13.960"/>
+</test>
+<status status="PASS" starttime="20220208 22:58:55.388" endtime="20220208 22:59:13.968"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo2 Suite">Demo2 Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
